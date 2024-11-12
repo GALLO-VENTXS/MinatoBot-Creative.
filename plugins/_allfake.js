@@ -30,18 +30,18 @@ global.rcanal = {
  contextInfo: {
      	isForwarded: true,
     forwardedNewsletterMessageInfo: {
-      newsletterJid: "120363348355703366@newsletter",
+      newsletterJid: "120363346794689649@newsletter",
       serverMessageId: 100,
       newsletterName: global.ucapan,
    }, 
    externalAdReply: {
     showAdAttribution: true, 
-    title: "Waguri Ai ✧", 
+    title: "Minato Creative ⚡", 
     body: wm, 
-    mediaUrl: "https://pomf2.lain.la/f/ut2z21cs.jpg", 
+    mediaUrl: "https://i.ibb.co/C75Z2Q5/file.jpg", 
     description: null, 
     previewType: "PHOTO", 
-    thumbnailUrl: "https://pomf2.lain.la/f/ut2z21cs.jpg", 
+    thumbnailUrl: "https://i.ibb.co/C75Z2Q5/file.jpg", 
     thumbnail: fs.readFileSync('./media/fake.jpg'),
     sourceUrl: sig, 
     mediaType: 1, 
@@ -56,7 +56,7 @@ global.adReply = {
     contextInfo: {
     	isForwarded: true,
     forwardedNewsletterMessageInfo: {
-      newsletterJid: "120363348355703366@newsletter",
+      newsletterJid: "120363346794689649@newsletter",
       serverMessageId: 100,
       newsletterName: global.ucapan,
     },
@@ -109,7 +109,7 @@ participant : '0@s.whatsapp.net'
 },
 message: {
 newsletterAdminInviteMessage: {
-newsletterJid: '120363210705976689@newsletter',
+newsletterJid: '120363346794689649@newsletter',
     newsletterName: '',
     caption: `${wm} | 2022 - 2025`
 }}}
