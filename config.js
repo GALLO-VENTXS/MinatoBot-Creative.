@@ -34,8 +34,8 @@ global.nomorown = '573108504016'
 
 /*============= MARCA DE AGUA =============*/
 global.readMore = readMore
-global.author = 'KenisawaDev'
-global.namebot = 'Waguri Ai'
+global.author = 'GALLO-VENTXS'
+global.namebot = 'Minato Creative'
 global.wm = 'Mł₦λŦØ ₡ŘEλŦłVE BY GλLLØ VENŦXS '
 global.watermark = wm
 global.botdate = `⫹⫺ FECHA: ${week} ${date}\n⫹⫺ HORA: ${horario}`
