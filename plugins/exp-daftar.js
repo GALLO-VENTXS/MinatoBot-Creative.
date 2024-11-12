@@ -151,8 +151,8 @@ Registrarse significa aceptar los términos
                   forwardingScore: 100,
                   isForwarded: true,
                 forwardedNewsletterMessageInfo: {
-                  newsletterJid: '120363348355703366@newsletter',
-                  newsletterName: '✧ Kenisawa World ✧',
+                  newsletterJid: '120363346794689649@newsletter',
+                  newsletterName: '𖣐 Kenisawa World 𖣐',
                   serverMessageId: 100
                 }
                 }
