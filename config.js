@@ -26,33 +26,33 @@ let hora = moment.tz('America/Buenos_Aires').format('HH')
 const readMore = more.repeat(4001)
 
 /*============= INFO PRINCIPAL =============*/
-global.owner = [['5493865860047', 'KenisawaDev', true]]
+global.owner = [['573108504016', 'GλLLØ VENŦXS', true]]
 global.mods = []
 global.prems = []
-global.nomorbot = '5493816785382'
-global.nomorown = '5493865860047'
+global.nomorbot = '529631613708'
+global.nomorown = '573108504016'
 
 /*============= MARCA DE AGUA =============*/
 global.readMore = readMore
 global.author = 'KenisawaDev'
 global.namebot = 'Waguri Ai'
-global.wm = '© Waguri Ai By KenisawaDev'
+global.wm = 'Mł₦λŦØ ₡ŘEλŦłVE BY GλLLØ VENŦXS '
 global.watermark = wm
 global.botdate = `⫹⫺ FECHA: ${week} ${date}\n⫹⫺ HORA: ${horario}`
 global.bottime = `H O R A : ${horario}`
-global.stickpack = `Sticker creado por ${namebot}\ngithub.com/MauroAzcurra\n\nWaguri Ai\n+${nomorbot}`
-global.stickauth = `© Waguri Ai By KenisawaDev`
+global.stickpack = `Sticker creado por ${namebot}\ngithub.com/GALLO-VENTXS\n\MinatoBot-Creative\n+${nomorbot}`
+global.stickauth = `Mł₦λŦØ ₡ŘEλŦłVE By GλLLØ VENŦXS`
 global.week = `${week} ${date}`
 global.wibb = `${horario}`
 
 //*============= REDES =============*/
-global.sig = 'https://www.instagram.com/'
-global.sgh = 'https://github.com/MauroAzcurra'
-global.sgc = 'https://whatsapp.com/channel/'
-global.sgw = 'https://wa.me/5493865860047'
+global.sig = 'https://www.instagram.com/gallo_ventxs'
+global.sgh = 'https://github.com/GALLO-VENTXS'
+global.sgc = 'https://whatsapp.com/channel/0029VarflA19RZARXpfQhp1X'
+global.sgw = 'https://wa.me/573108504016'
 global.sdc = '-'
 global.sfb = 'https://www.facebook.com/'
-global.snh = 'https://www.instagram.com/'
+global.snh = 'https://www.instagram.com/gallo_ventxs'
 
 
 /*============= DISEÑOS =============*/
@@ -75,7 +75,7 @@ global.htjava = '⫹⫺'
 global.hsquere = ['⛶','❏','⫹⫺']
 
 /*============= MENSAJES FRECUENTES =============*/
-global.wait = '✧ Espere un momento...'
+global.wait = '𖣐 Espere un momento...'
 global.eror = 'Error!'
 
 /*============= WEB API KEY =============*/
