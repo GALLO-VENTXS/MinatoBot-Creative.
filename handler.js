@@ -521,7 +521,7 @@ externalAdReply: {
 title: global.wm,
 body: "Group Notifications",
 thumbnailUrl: pp,
-sourceUrl: "https://whatsapp.com/channel/0029VarbyoN2ZjCkcPW7q33F",
+sourceUrl: "https://whatsapp.com/channel/0029VarflA19RZARXpfQhp1X",
 mediaType: 1,
 renderLargerThumbnail: true
 }}}
@@ -591,19 +591,19 @@ _@${participant.split`@`[0]} eliminó un mensaje._
 
 global.dfail = (type, m, conn) => {
     let msg = {
-        rowner: "> _*✧ Perdon, Este comando es solo para mi Owner.*_",
-        owner: "> _*✧ Perdon, Solo mi creador puede usar este comando.*_",
-        mods: "> _*✧ Perdon, Este comando solo es para mods*_",
-        premium: "> _*✧ No eres un usuario Premium, Habla con mi owner*_",
-        group: "> _*✧ Perdon, Este comando solo es para grupos*_",
-        private: "> _*✧ Ve a mi chat privado y usa este comando*_",
-        admin: "> _*✧ Quien eres?, tu no eres admin*_",
-        botAdmin: "> _*✧ Es necesario que sea admin primero para usar esta función*_",
+        rowner: "> _*⚡ Perdon, Este comando es solo para mi Owner.*_",
+        owner: "> _*⚡ Perdon, Solo mi creador puede usar este comando.*_",
+        mods: "> _*⚡ Perdon, Este comando solo es para mods*_",
+        premium: "> _*⚡ No eres un usuario Premium, Habla con mi owner*_",
+        group: "> _*⚡ Perdon, Este comando solo es para grupos*_",
+        private: "> _*⚡ Ve a mi chat privado y usa este comando*_",
+        admin: "> _*⚡ Quien eres?, tu no eres admin*_",
+        botAdmin: "> _*⚡ Es necesario que sea admin primero para usar esta función*_",
         unreg: "> _*‼️USUARIO NO REGISTRADO‼️*_\n\n`Para registrarse:`\n\n> usa el comando .reg",
-        restrict: "> _*✧ Comando desactivado por mi Owner`*_" 
+        restrict: "> _*⚡ Comando desactivado por mi Owner`*_" 
     }[type]
     
-    let deco_msg = "`१✿ᩧ┅═❏✧͚Wag፝uri Aiᩦ❏═┅✿ᩧ̼१`\n"+`${msg}\n`+"`︶ִֶָ⏝︶ִֶָ⏝˖ ࣪ ୨✧୧ ࣪ ˖⏝ִֶָ︶⏝ִֶָ︶`"
+    let deco_msg = "`१✿ᩧ┅═❏✧͚Mł₦λŦØ ₡ŘEλŦłVE❏═┅✿ᩧ̼१`\n"+`${msg}\n`+"`︶ִֶָ⏝︶ִֶָ⏝˖ ࣪ ୨✧୧ ࣪ ˖⏝ִֶָ︶⏝ִֶָ︶`"
     if (msg) return conn.reply(m.chat, estilo(deco_msg), m)
 }
 
