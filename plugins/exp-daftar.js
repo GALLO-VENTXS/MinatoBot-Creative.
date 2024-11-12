@@ -52,8 +52,8 @@ ${readMore}
 *✧ Numero de serie:*
 ${sn}
 
-**Términos de servicio (TOS) - Waguri Ai ESM**
-Al utilizar Waguri Ai ESM, usted acepta los siguientes términos:
+**Términos de servicio (TOS) - Mł₦λŦØ ₡ŘEλŦłVE**
+Al utilizar Minato Creative ES, usted acepta los siguientes términos:
 
 1. *ESTÁ ESTRICTAMENTE PROHIBIDO CAMBIAR EL TEMPORIZADOR/MENSAJE TEMPORAL*
 El bot bloqueará automáticamente su número, para desbanear informe al propietario (+${global.nomorown}).
@@ -67,7 +67,7 @@ El bot bloqueará permanentemente su número si hay una indicación de spam en s
 4. *PROPIETARIO DEL CHAT SI ES NECESARIO*
 No tiene sentido chatear con el número de bot, porque el número de bot se almacena en el servidor y el propietario no verá su chat.
 
-Al utilizar Waguri Ai ESM, usted acepta todos los términos aplicables.
+Al utilizar Minato Creative, usted acepta todos los términos aplicables.
 
 *Estos términos se actualizaron por última vez el 12 de mayo de 2024.*
 
@@ -75,9 +75,9 @@ Registrarse significa aceptar los términos
 `
            let txt_body = txt_reg
             let txt_footer = wm
-            let txt_title = `✧ WAGURI AI THE BEST BOT WHATSAPP ✧`
+            let txt_title = `𖣐 MINATO CREATIVE THE BEST BOT WHATSAPP 𖣐`
             let txt_subtitle = ``
-            let creador = `By KenisawaDev (no borrar creditos)`
+            let creador = `By GALLO-VENTXS (no borrar creditos)`
             let msg = generateWAMessageFromContent(m.chat, {
   viewOnceMessage: {
     message: {
@@ -105,10 +105,10 @@ Registrarse significa aceptar los términos
   "name": "single_select",
 "buttonParamsJson": 
 `{
-  "title": "✧ CLICK AQUI ✧",
+  "title": "𖣐 CLICK AQUI 𖣐",
   "sections": [
     {
-      "title": "✧ Waguri Ai",
+      "title": "𖣐 Minato Creative",
       "rows": [
         
         {
