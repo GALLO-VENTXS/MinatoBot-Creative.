@@ -5,7 +5,7 @@ const {
     prepareWAMessageMedia
   } = (await import('@adiwajshing/baileys')).default
 
-var link_img = `https://pomf2.lain.la/f/8lplrwo2.jpg`
+var link_img = `https://i.ibb.co/tzXBBX9/file.jpg`
 
 let Reg = /\|?(.*)([.|] *?)([0-9]*)$/i
 let handler = async function (m, { text, usedPrefix }) {
@@ -29,13 +29,13 @@ let handler = async function (m, { text, usedPrefix }) {
     }, { quoted: global.ftoko });
   if (user.registered === true) throw m.reply(`✧ Usted ya esta registradx\nQuiere salir del registro? ${usedPrefix}unreg <NUMERO DE SERIE>`)
   if (!Reg.test(text)) throw conn.relayMessage(m.chat, buttonMessage.message, {});
-//  if (!Reg.test(text)) throw m.reply(`✧ Formato incorrecto\n*${usedPrefix}reg Nombre.Edad*`)
+//  if (!Reg.test(text)) throw m.reply(`𖣐 Formato incorrecto\n*${usedPrefix}reg Nombre.Edad*`)
   let [_, name, splitter, age] = text.match(Reg)
-  if (!name) throw m.reply('✧ Solo puedes poner letras en tu nombre')
-  if (!age) throw m.reply('✧ Solo puedes poner numeros en tu edad')
+  if (!name) throw m.reply('𖣐 Solo puedes poner letras en tu nombre')
+  if (!age) throw m.reply('𖣐 Solo puedes poner numeros en tu edad')
   age = parseInt(age)
-  if (age > 120) throw m.reply('✧ Usted es demasiado viejo')
-  if (age < 16) throw m.reply('✧ Usted es demasiado menor')
+  if (age > 120) throw m.reply('𖣐 Usted es demasiado viejo')
+  if (age < 16) throw m.reply('𖣐 Usted es demasiado menor')
   user.name = name.trim()
   user.age = age
   user.regTime = + new Date
@@ -45,11 +45,11 @@ let handler = async function (m, { text, usedPrefix }) {
 `+"*`REGISTRO COMPLETO`*\n"+`
 
 ╭─「 Info 」
-│ *✧ Nombre:* ${name}
-│ *✧ Edad:* ${age} Años 
+│ *𖣐 Nombre:* ${name}
+│ *𖣐 Edad:* ${age} Años 
 ╰────
 ${readMore}
-*✧ Numero de serie:*
+*𖣐 Numero de serie:*
 ${sn}
 
 **Términos de servicio (TOS) - Mł₦λŦØ ₡ŘEλŦłVE**
