@@ -291,19 +291,19 @@ let handler = async (m, { conn, usedPrefix: _p, __dirname, args, command }) => {
 						forwardingScore: 10,
 						isForwarded: true,
 						forwardedNewsletterMessageInfo: {
-							newsletterJid: "120363348355703366@newsletter",
+							newsletterJid: "120363346794689649@newsletter",
 							serverMessageId: null,
-							newsletterName: '[ Kenisawa World ]'
+							newsletterName: '[ GALLO CREATIVE ]'
 						},
 						externalAdReply: {
 							title: `Hola ${name} ~`,
 							body: wm,
 							showAdAttribution: true,
-							thumbnailUrl: "https://f.uguu.se/oEElSbJO.jpg",
+							thumbnailUrl: "https://i.ibb.co/DYS9bBn/file.jpg",
 							mediaType: 1,
 							previewType: 0,
 							renderLargerThumbnail: true,
-							mediaUrl: "https://f.uguu.se/oEElSbJO.jpg",
+							mediaUrl: "https://i.ibb.co/DYS9bBn/file.jpg",
 							thumbnail: fs.readFileSync('./media/fake.jpg'),
 							sourceUrl: sgc,
 						}
