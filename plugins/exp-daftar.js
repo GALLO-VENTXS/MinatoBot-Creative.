@@ -131,7 +131,7 @@ Registrarse significa aceptar los términos
               },                         
               {
                       name: "cta_url",
-                      buttonParamsJson: `{"display_text":"Canal","url":"https://whatsapp.com/channel/0029VarbyoN2ZjCkcPW7q33F","merchant_url":"https://whatsapp.com/channel/0029VarbyoN2ZjCkcPW7q33F"}`
+                      buttonParamsJson: `{"display_text":"Canal","url":"https://whatsapp.com/channel/0029VarflA19RZARXpfQhp1X","merchant_url":"https://whatsapp.com/channel/0029VarflA19RZARXpfQhp1X"}`
               },
               {
                       name: "quick_reply",
@@ -152,7 +152,7 @@ Registrarse significa aceptar los términos
                   isForwarded: true,
                 forwardedNewsletterMessageInfo: {
                   newsletterJid: '120363346794689649@newsletter',
-                  newsletterName: '𖣐 Kenisawa World 𖣐',
+                  newsletterName: '𖣐 GALLO CREATIVE 𖣐',
                   serverMessageId: 100
                 }
                 }
