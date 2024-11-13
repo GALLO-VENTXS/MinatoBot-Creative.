@@ -18,7 +18,7 @@ let handler = async (m, { conn, args, usedPrefix, command }) => {
   catch (e) {
     m.reply(e + '')
     text = args.join(' ')
-    if (!text) throw m.reply(`*✧ Ejemplo:* ${usedPrefix}${command} es hola`)
+    if (!text) throw m.reply(`*⚡ Ejemplo:* ${usedPrefix}${command} es hola`)
     res = await tts(text, defaultLang)
   } finally {
     if (res) conn.sendFile(m.chat, res, 'tts.opus', null, m, true)
