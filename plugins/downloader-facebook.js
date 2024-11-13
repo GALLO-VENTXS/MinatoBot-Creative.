@@ -17,7 +17,7 @@ let handler = async (m, { conn, args }) => {
         
         if (video && video.url) {
             const videoBuffer = await axios.get(video.url, { responseType: 'arraybuffer' }).then(res => res.data);
-            const caption = `✧ Para: @${sender}`;
+            const caption = `𖣐 Para: @${sender}`;
 
             await conn.sendMessage(
                 m.chat, {
