@@ -8,7 +8,7 @@ let handler = async (m, { conn, command }) => {
     if (data.url) {
         conn.sendFile(m.chat, await(await fetch(data.url)).buffer(), 'nih fanartnya', wm, m)
     } else {
-        conn.reply(m.chat, '    ✧ fanart', m)
+        conn.reply(m.chat, '    𖣐 fanart', m)
     }
 }
 
