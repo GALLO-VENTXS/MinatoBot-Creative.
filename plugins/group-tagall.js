@@ -24,7 +24,7 @@ let handler = async (m, { conn, text, participants, isAdmin, isOwner }) => {
         )
         await conn.relayMessage(m.chat, msg.message, { messageId: msg.key.id })
     } else {
-        m.reply("✧ Responda a un mensaje o escriba el mensaje con el que desea etiquetar.")
+        m.reply("𖣐 Responda a un mensaje o escriba el mensaje con el que desea etiquetar.")
     }
 }
   
