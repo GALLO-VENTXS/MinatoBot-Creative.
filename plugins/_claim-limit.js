@@ -6,11 +6,11 @@ let handler = async (m,{ conn} ) => {
   let user = global.db.data.users[m.sender]
 
   if (user.role === 'Free user' && user.limit >= 7500) {
-    conn.reply(m.chat, '✧ Los usuarios normales obtendran 7500 Eris', m)
+    conn.reply(m.chat, '𖣐 Los usuarios normales obtendran 7500 Eris', m)
     return
   }
 
-  if (new Date - user.lastclaim < cooldown) throw m.reply(`✧ Ya reclamaste los eris diarios, regresa *${((user.lastclaim + cooldown) - new Date()).toTimeString()}*`);
+  if (new Date - user.lastclaim < cooldown) throw m.reply(`𖣐 Ya reclamaste los eris diarios, regresa *${((user.lastclaim + cooldown) - new Date()).toTimeString()}*`);
   let text = ''
   for (let reward of Object.keys(rewards)) {
     if (!(reward in user)) continue
