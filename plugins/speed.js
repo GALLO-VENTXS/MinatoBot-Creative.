@@ -43,7 +43,7 @@ let handler = async (m, { conn, usedPrefix, __dirname, text, command }) => {
   // Menghitung persentase penggunaan CPU
   cpuUsage = ((cpu.times.user + cpu.times.nice + cpu.times.sys + cpu.times.irq) / cpu.times.idle) * 100;
   
-  let capti = `*✧ Nombre*: ${_package.name}
+  let capti = `*⚡ Nombre*: ${_package.name} ⚡
 𖣐 *Versión*: ${_package.version}
 𖣐 *Librería*: ${_package.description}
 
