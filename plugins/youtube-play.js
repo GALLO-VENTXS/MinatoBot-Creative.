@@ -9,7 +9,7 @@ const {
 let handler = async (m, { conn, args, text, isPrems, isOwner, usedPrefix, command }) => {
 
 if (!text) {
-    return m.reply(`   ✧Uso: ${usedPrefix}${command} Joji Ew`);
+    return m.reply(`   𖣐Uso: ${usedPrefix}${command} Joji Ew`);
   }
   try {
     let results = await yts(text);
@@ -22,7 +22,7 @@ if (!text) {
       ago,
       url
     } = tes;
-    let texto = "\n*" + title + "*" + "\n\n      *✧ `Duracion`:* " + timestamp + "\n      *✧ `Vistas`:* " + views + "\n      *✧ `Publicado`:* " + ago + "\n";
+    let texto = "\n*" + title + "*" + "\n\n      *⚡ `Duracion`:* " + timestamp + "\n      *⚡ `Vistas`:* " + views + "\n      *⚡ `Publicado`:* " + ago + "\n";
     let msg = generateWAMessageFromContent(m.chat, {
       'viewOnceMessage': {
         'message': {
