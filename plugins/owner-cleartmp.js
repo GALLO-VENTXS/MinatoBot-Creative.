@@ -26,7 +26,7 @@ let handler = async (m, { conn, usedPrefix: _p, __dirname, args }) => {
     }
   });
 
-  conn.reply(m.chat, '✧ Listo!', m);
+  conn.reply(m.chat, '𖣐 Listo!', m);
 
   if (deletedFiles.length > 0) {
     console.log('Deleted files:', deletedFiles);
