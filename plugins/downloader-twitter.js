@@ -28,7 +28,7 @@ let handler = async (m, { conn, args }) => {
         // Download media sebagai buffer
         const { data: videoBuffer } = await axios.get(media, { responseType: 'arraybuffer' });
 
-        const caption = `✧ Para: @${sender}`;
+        const caption = `𖣐 Para: @${sender}`;
 
         await conn.sendMessage(
             m.chat, {
