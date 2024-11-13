@@ -8,7 +8,7 @@ let handler = async (m, { conn, text, command, usedPrefix }) => {
   let tiempoEspera = 5 * 60
   if (cooldowns[m.sender] && Date.now() - cooldowns[m.sender] < tiempoEspera * 1000) {
     let tiempoRestante = segundosAHMS(Math.ceil((cooldowns[m.sender] + tiempoEspera * 1000 - Date.now()) / 1000))
-    m.reply(`✧ Ya has cometido un Crimen recientemente, espera *⏱ ${tiempoRestante}* para cometer tu próximo Crimen y evitar ser atrapado.`)
+    m.reply(`𖣐 Ya has cometido un Crimen recientemente, espera *⏱ ${tiempoRestante}* para cometer tu próximo Crimen y evitar ser atrapado.`)
     return
   }
   
@@ -54,7 +54,7 @@ let handler = async (m, { conn, text, command, usedPrefix }) => {
   users[senderId].limit += smallAmountTaken
   users[randomUserId].limit -= smallAmountTaken
   conn.sendMessage(m.chat, {
-  text: `✧ Lograste cometer tu crimen con exito, pero te descubrieron y solo lograste tomar *${smallAmountTaken} ❇️ Eris* de @${randomUserId.split("@")[0]}\n\nSe suman *+${smallAmountTaken} ❇️ Eris* a ${senderName}.`,
+  text: `𖣐 Lograste cometer tu crimen con exito, pero te descubrieron y solo lograste tomar *${smallAmountTaken} ❇️ Eris* de @${randomUserId.split("@")[0]}\n\nSe suman *+${smallAmountTaken} ❇️ Eris* a ${senderName}.`,
   contextInfo: { 
   mentionedJid: [randomUserId],
   }
