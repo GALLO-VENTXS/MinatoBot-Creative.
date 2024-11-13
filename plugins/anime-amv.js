@@ -9,7 +9,7 @@ let handler = async (m, {
     command
 }) => {
     await m.reply(wait)
-    if (!text) return m.reply('Ingresa un numero 1/2\n✧ Ejemplo: .amv 1')
+    if (!text) return m.reply('Ingresa un numero 1/2\n𖣐 Ejemplo: .amv 1')
     if (text == '1') {
         try {
             let resl = await animeVideo()
