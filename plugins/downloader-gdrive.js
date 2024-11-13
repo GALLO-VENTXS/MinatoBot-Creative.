@@ -10,7 +10,7 @@ let handler = async (m, { conn, args }) => {
 	
 	try {
 		let res = await GDriveDl(args[0])
-		if (res.fileSize.slice(-2) == "GB") return m.reply(`✧ El archivo es demasiado grande`)
+		if (res.fileSize.slice(-2) == "GB") return m.reply(`⚡ El archivo es demasiado grande`)
 		if (!someincludes(['kB','KB'], res.fileSize.slice(-2)) && parseInt(res.fileSize) > 500) return m.reply(`Tamaño: ${res.fileSize}\nSolo sw puede descarga máximo 500 MB`)
 		let txt = `*[ GDRIVE Downloader ]*\n\n`
 		txt += `*Nombre :* ${res.fileName}\n`
