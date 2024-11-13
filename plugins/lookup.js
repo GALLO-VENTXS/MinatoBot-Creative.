@@ -1,7 +1,7 @@
 import fetch from 'node-fetch'
 
 let handler = async (m, { text, usedPrefix, command }) => {
-  if (!text) throw m.reply(`𖣐 Ingresa el Dominio/Sub Dominio!\n\n*✧ Ejemplo:* ryzendesu.com`);
+  if (!text) throw m.reply(`𖣐 Ingresa el Dominio/Sub Dominio!\n\n*⚡ Ejemplo:* ryzendesu.com`);
 
   if (text.includes('https://') || text.includes('http://')) throw m.reply(`𖣐 Ingresa el Dominio/Sub Dominio!\n\n*⚡ Ejemplo:* ryzendesu.com`);
 
