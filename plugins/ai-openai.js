@@ -5,7 +5,7 @@ let previousMessages = [];
 const handler = async (m, { text, usedPrefix, command, conn }) => {
   try {
     if (!text) {
-      throw m.reply("Ingresa una pregunta!\n\n*✧ Ejemplo:* Cual es la capital de México?");
+      throw m.reply("Ingresa una pregunta!\n\n*⚡ Ejemplo:* Cual es la capital de México?");
     }
 
     let { key } = await conn.sendMessage(m.chat, {
