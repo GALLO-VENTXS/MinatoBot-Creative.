@@ -77,8 +77,8 @@ Registrarse significa aceptar los términos
           mediaType: 1,
           previewType: 0,
           renderLargerThumbnail: true,
-          thumbnailUrl: 'https://f.uguu.se/QJyvtNbV.png',
-          sourceUrl: 'https://www.instagram.com/',
+          thumbnailUrl: 'https://pomf2.lain.la/f/33iksjmi.jpg',
+          sourceUrl: 'https://www.instagram.com/gallo_ventxs',
         }
       }, mentions: [m.sender]
     }
