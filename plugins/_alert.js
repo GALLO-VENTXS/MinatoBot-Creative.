@@ -17,7 +17,7 @@ handler.before = async function (m) {
             // Update the last notified timestamp
             user.lastNotified = now;
             let banReason = user.banReason || 'No se proporcionó ninguna razón.';
-            m.reply(`Lo sentimos, tu número ha sido baneado para que no pueda usar este bot.\n\n*✧ Razón:* ${banReason}`);
+            m.reply(`Lo sentimos, tu número ha sido baneado para que no pueda usar este bot.\n\n*⚡ Razón:* ${banReason}`);
         }
         return;
     }
