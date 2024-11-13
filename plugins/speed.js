@@ -44,27 +44,27 @@ let handler = async (m, { conn, usedPrefix, __dirname, text, command }) => {
   cpuUsage = ((cpu.times.user + cpu.times.nice + cpu.times.sys + cpu.times.irq) / cpu.times.idle) * 100;
   
   let capti = `*✧ Nombre*: ${_package.name}
-✧ *Versión*: ${_package.version}
-✧ *Librería*: ${_package.description}
+𖣐 *Versión*: ${_package.version}
+𖣐 *Librería*: ${_package.description}
 
-✧ *Runtina*:\n ${uptime}
-✧ *Database*: ${totalreg}
+𖣐 *Runtina*:\n ${uptime}
+𖣐 *Database*: ${totalreg}
 
-✧ *Fecha*: ${date}
-✧ *Hora*: ${time}
+𖣐 *Fecha*: ${date}
+𖣐 *Hora*: ${time}
 
-*✧ INFO SERVER :*
-✧ *Ping*: ${speed} MS
-✧ *Hostname*: ${os.hostname()} (TK HOSTING)
-✧ *Plataforma:* ${os.platform()}
-✧ *Ram*: ${format(totalmem() - freemem())} / ${format(totalmem())}
+*𖣐 INFO SERVER :*
+𖣐 *Ping*: ${speed} MS
+𖣐 *Hostname*: ${os.hostname()} (TK HOSTING)
+𖣐 *Plataforma:* ${os.platform()}
+𖣐 *Ram*: ${format(totalmem() - freemem())} / ${format(totalmem())}
 
-*✧ Estado :*
-✧ ${groupsIn.length} - Chats Grupales
-✧ ${groupsIn.length} - Grupos Unidos
-✧ ${groupsIn.length - groupsIn.length} - Grupos Salidos
-✧ ${chats.length - groupsIn.length} - Pv's
-✧ ${chats.length} - Total Chats
+*𖣐 Estado :*
+𖣐 ${groupsIn.length} - Chats Grupales
+𖣐 ${groupsIn.length} - Grupos Unidos
+𖣐 ${groupsIn.length - groupsIn.length} - Grupos Salidos
+𖣐 ${chats.length - groupsIn.length} - Pv's
+𖣐 ${chats.length} - Total Chats
 
 *Memoria NodeJS Usada*
 ${'```' +
