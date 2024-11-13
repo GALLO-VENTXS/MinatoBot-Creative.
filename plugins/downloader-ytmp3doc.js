@@ -2,7 +2,7 @@ import fetch from 'node-fetch'
 import yts from 'yt-search'
 
 let handler = async (m, { conn, text, usedPrefix, command }) => {
-if (!text) throw m.reply(`Ingresa un link de YouTube\n*✧ Ejemplo:* ${usedPrefix}${command} https://youtu.be/oGmW2CF001I`);
+if (!text) throw m.reply(`Ingresa un link de YouTube\n*⚡ Ejemplo:* ${usedPrefix}${command} https://youtu.be/oGmW2CF001I`);
 conn.sendMessage(m.chat, { react: { text: "🕒", key: m.key } });
 
   let d2 = await fetch(`https://exonity.tech/api/ytdlp2-faster?apikey=adminsepuh&url=${text}`)
