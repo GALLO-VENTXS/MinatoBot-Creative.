@@ -8,7 +8,7 @@ try {
 if (!res.ok) throw await res.text()
 let json = await res.json()
 if (!json.url) throw m.react('✖️')
-await conn.sendFile(m.chat, json.url, 'thumbnail.jpg', `*✧ Random* : ${command}`, m, null, rcanal)
+await conn.sendFile(m.chat, json.url, 'thumbnail.jpg', `*⚡ Random* : ${command}`, m, null, rcanal)
 await m.react('✅')
 } catch {
 await m.react('✖️')
