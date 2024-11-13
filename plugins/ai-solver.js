@@ -8,7 +8,7 @@ let handler = async (m, { conn, usedPrefix, command, text }) => {
         let name = await conn.getName(who)
         let q = m.quoted ? m.quoted : m
         let mime = (q.msg || q).mimetype || ''
-        if (!mime) throw m.reply('✧ Responde a una *Imagen*.')
+        if (!mime) throw m.reply('𖣐 Responde a una *Imagen*.')
         m.reply(wait)
         let media = await q.download()
         let url = await uploadPomf(media)
