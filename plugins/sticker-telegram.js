@@ -1,7 +1,7 @@
 import fetch from "node-fetch"
 import { sticker } from '../lib/sticker.js'
 let handler = async (m, { conn, args, usedPrefix, command }) => {
-    if (!args[0]) throw m.reply(`*✧ Ejemplo:*\n${usedPrefix + command} https://t.me/addstickers/Porcientoreal`)
+    if (!args[0]) throw m.reply(`*⚡ Ejemplo:*\n${usedPrefix + command} https://t.me/addstickers/Porcientoreal`)
     if (!args[0].match(/(https:\/\/t.me\/addstickers\/)/gi)) throw m.reply(`???`)
     let packName = args[0].replace("https://t.me/addstickers/", "") 
     let gas = await fetch(`https://api.telegram.org/bot891038791:AAHWB1dQd-vi0IbH2NjKYUk-hqQ8rQuzPD4/getStickerSet?name=${encodeURIComponent(packName)}`, { method: "GET", headers: { "User-Agent": "GoogleBot" } })
@@ -17,7 +17,7 @@ let handler = async (m, { conn, args, usedPrefix, command }) => {
         if (stiker) conn.sendFile(m.chat, stiker, 'sticker.webp', '', m, { quoted: m })
         await delay(1000)
     }
-    throw m.reply(`*✧ Listo*`)
+    throw m.reply(`*⚡ Listo*`)
 }
 handler.help = ['stickertele <Link>']
 handler.tags = ['sticker']
