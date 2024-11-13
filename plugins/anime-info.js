@@ -1,7 +1,7 @@
 import fetch from 'node-fetch'
 
 var handler = async (m, { conn, text }) => {
-    if (!text) throw m.reply(`*✧ Ingresa el nombre del anime que desea ver la información!*`);
+    if (!text) throw m.reply(`*𖣐 Ingresa el nombre del anime que desea ver la información!*`);
 
     let res = await fetch('https://api.jikan.moe/v4/anime?q=' + text);
 
@@ -28,15 +28,15 @@ var handler = async (m, { conn, text }) => {
     let genreList = genres.map((genre) => genre.name).join(', ');
 
     let animeingfo = `
-✧ *Titulo: ${title_japanese}
-✧ *Tipo: ${type}
-✧ *Genero: ${genreList}
-✧ *Puntuación: ${score}
-✧ *Miembros: ${members}
-✧ *Estado: ${status}
-✧ *Favoritos: ${favorites}
-✧ *Link: ${url}
-✧ *Synopsis: ${synopsis}
+𖣐 *Titulo: ${title_japanese}
+𖣐 *Tipo: ${type}
+𖣐 *Genero: ${genreList}
+𖣐 *Puntuación: ${score}
+𖣐 *Miembros: ${members}
+𖣐 *Estado: ${status}
+𖣐 *Favoritos: ${favorites}
+𖣐 *Link: ${url}
+𖣐 *Synopsis: ${synopsis}
 `;
 
     conn.sendFile(m.chat, images.jpg.image_url, 'anjime.jpg', `*ANIME INFO*\n` + animeingfo, m);
