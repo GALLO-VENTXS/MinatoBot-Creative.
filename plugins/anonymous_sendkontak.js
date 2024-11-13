@@ -4,7 +4,7 @@ async function handler(m, { command, conn, text }) {
 	this.anonymous = this.anonymous ? this.anonymous : {}
 	let who = m.mentionedJid && m.mentionedJid[0] ? m.mentionedJid[0] : m.fromMe ? conn.user.jid : m.sender
 	let room = Object.values(this.anonymous).find(room => room.check(who))
-	if (!room) throw m.reply('✧ No estás en el chat anónimo')
+	if (!room) throw m.reply('𖣐 No estás en el chat anónimo')
 	let other = room.other(who)
   var name
   if (text) name = text
