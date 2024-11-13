@@ -8,13 +8,13 @@ let handler = async (m, { conn, text, usedPrefix, command }) => {
     }
 
     let userData = db.data.users[user];
-    if (!userData) throw m.reply(`✧ Usuario no encontrado!`);
+    if (!userData) throw m.reply(`𖣐 Usuario no encontrado!`);
 
     // Extract the user's phone number from the text
     let phoneNumber = user.split('@')[0];
 
-    if (!phoneNumber) throw m.reply(`✧ Cuanto días le agregamos corazón?`);
-    if (isNaN(phoneNumber)) return m.reply(`✧ Solo números!\n\n✧ Ejemplo:\n${usedPrefix + command} @${m.sender.split`@`[0]} 7`);
+    if (!phoneNumber) throw m.reply(`𖣐 Cuanto días le agregamos corazón?`);
+    if (isNaN(phoneNumber)) return m.reply(`𖣐 Solo números!\n\n✧ Ejemplo:\n${usedPrefix + command} @${m.sender.split`@`[0]} 7`);
 
     let txt = text.split(' ')[1]; // Extract the second part of the text (duration)
 
@@ -27,9 +27,9 @@ let handler = async (m, { conn, text, usedPrefix, command }) => {
     userData.premium = true;
 
     m.reply(`
-✧ *Nombre:* ${userData.name}
-✧ *Días:* ${txt}
-✧ *Countdown:* ${userData.premiumTime - now}`);
+𖣐 *Nombre:* ${userData.name}
+𖣐 *Días:* ${txt}
+𖣐 *Countdown:* ${userData.premiumTime - now}`);
 };
 
 handler.help = ['addprem <número> <días>']
