@@ -23,8 +23,8 @@ let handler = async (m, { conn, usedPrefix, command }) => {
             let videoURL = firstResult.video;
             let videoIMG = firstResult.image;
 
-            let captionVid = `*⚡ Nombre:* ${filename}\n*✧ Episodio:* ${episode}\n\n*⚡ Similitud:* ${similarity}%`;
-            let captionImg = `*⚡ Nombre:* ${filename}\n*✧ Episodio:* ${episode}\n\n*⚡ Similitud:* ${similarity}%`;
+            let captionVid = `*⚡ Nombre:* ${filename}\n*⚡ Episodio:* ${episode}\n\n*⚡ Similitud:* ${similarity}%`;
+            let captionImg = `*⚡ Nombre:* ${filename}\n*⚡ Episodio:* ${episode}\n\n*⚡ Similitud:* ${similarity}%`;
 
             await conn.sendFile(m.chat, videoURL, filename, captionVid, m);
             await conn.sendFile(m.chat, videoIMG, filename, captionImg, m);
