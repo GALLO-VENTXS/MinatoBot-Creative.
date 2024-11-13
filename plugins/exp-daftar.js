@@ -16,7 +16,7 @@ let handler = async function (m, { text, usedPrefix }) {
         viewOnceMessage: {
             message: {
                 interactiveMessage: proto.Message.InteractiveMessage.create({
-                    body: { text: `✧ Formato incorrecto\n*${usedPrefix}reg Nombre.Edad*` },
+                    body: { text: `𖣐 Formato incorrecto\n*${usedPrefix}reg Nombre.Edad*` },
                     nativeFlowMessage: {
                         buttons: [{
                       name: "quick_reply",
