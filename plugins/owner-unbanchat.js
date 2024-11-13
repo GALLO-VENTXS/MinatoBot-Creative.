@@ -1,6 +1,6 @@
 let handler = async (m) => {
     global.db.data.chats[m.chat].isBanned = false
-    m.reply('✧ Listo!')
+    m.reply('𖣐 Listo!')
 }
 handler.help = ['unbanchat']
 handler.tags = ['owner']
