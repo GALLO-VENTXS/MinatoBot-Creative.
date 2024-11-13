@@ -1,7 +1,7 @@
 {
     "name": "Minato-Creative",
     "version": "8.0.0",
-    "description": "Minato Creative By GALLO-VENTXS",
+    "description": "Minato BY GALLO",
     "main": "index.js",
     "type": "module",
     "directories": {
@@ -50,6 +50,7 @@
         "node-os-utils": "^1.3.6",
         "node-webpmux": "^3.1.9",
         "ocr-space-api-wrapper": "^2.3.0",
+        "pdf-lib": "*",
         "perf_hooks": "^0.0.1",
         "pino": "^8.11.0",
         "pino-pretty": "^9.4.0",
