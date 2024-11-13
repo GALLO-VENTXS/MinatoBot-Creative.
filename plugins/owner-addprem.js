@@ -14,7 +14,7 @@ let handler = async (m, { conn, text, usedPrefix, command }) => {
     let phoneNumber = user.split('@')[0];
 
     if (!phoneNumber) throw m.reply(`𖣐 Cuanto días le agregamos corazón?`);
-    if (isNaN(phoneNumber)) return m.reply(`𖣐 Solo números!\n\n✧ Ejemplo:\n${usedPrefix + command} @${m.sender.split`@`[0]} 7`);
+    if (isNaN(phoneNumber)) return m.reply(`𖣐 Solo números!\n\n𖣐 Ejemplo:\n${usedPrefix + command} @${m.sender.split`@`[0]} 7`);
 
     let txt = text.split(' ')[1]; // Extract the second part of the text (duration)
 
