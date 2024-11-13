@@ -27,7 +27,7 @@ let handler = async function (m, { text, usedPrefix }) {
             }
         }
     }, { quoted: global.ftoko });
-  if (user.registered === true) throw m.reply(`✧ Usted ya esta registradx\nQuiere salir del registro? ${usedPrefix}unreg <NUMERO DE SERIE>`)
+  if (user.registered === true) throw m.reply(`𖣐 Usted ya esta registradx\nQuiere salir del registro? ${usedPrefix}unreg <NUMERO DE SERIE>`)
   if (!Reg.test(text)) throw conn.relayMessage(m.chat, buttonMessage.message, {});
 //  if (!Reg.test(text)) throw m.reply(`𖣐 Formato incorrecto\n*${usedPrefix}reg Nombre.Edad*`)
   let [_, name, splitter, age] = text.match(Reg)
