@@ -1,5 +1,5 @@
 let handler = async (m, { conn, text }) => {
-    if (!text) throw m.reply('✧ Y el numero?.')
+    if (!text) throw m.reply('𖣐 Y el numero?.')
     let who
     if (m.isGroup) {
         if (!m.mentionedJid) throw m.reply('El usuario no tiene premium.')
@@ -13,9 +13,9 @@ let handler = async (m, { conn, text }) => {
     if (users[who]) {
         users[who].premium = false
         users[who].premiumTime = 0
-        conn.reply(m.chat, '✧ Listo!', m)
+        conn.reply(m.chat, '𖣐 Listo!', m)
     } else {
-        throw m.reply('✧ Usuario no encontrado.')
+        throw m.reply('𖣐 Usuario no encontrado.')
     }
 }
 
