@@ -3,12 +3,12 @@ import ffmpeg from "fluent-ffmpeg"
 
 var handler = async (m, { conn, args, usedPrefix, command }) => {
     if (!args[0]) {
-        throw m.reply(`*✧ Ejemplo: ${usedPrefix + command
+        throw m.reply(`*⚡ Ejemplo: ${usedPrefix + command
         } https://vm.tiktok.com/ZMhAk8tLx/`);
     }
 
     try {
-        await conn.reply ( m.chat, "✧ Espere un momento, estoy descargando su video...", m, );
+        await conn.reply ( m.chat, "𖣐 Espere un momento, estoy descargando su video...", m, );
 
         const tiktokData = await tiktokdl(args[0]);
 
@@ -18,13 +18,13 @@ var handler = async (m, { conn, args, usedPrefix, command }) => {
 
         const videoURL = tiktokData.data.play;
         const videoURLWatermark = tiktokData.data.wmplay;
-        const infonya_gan = `*✧ Descripción:* ${tiktokData.data.title}\n*✧ Publicado:* ${tiktokData.data.create_time
-            }\n\n*✧ Estado:*\n=====================\nLikes = ${tiktokData.data.digg_count
+        const infonya_gan = `*⚡ Descripción:* ${tiktokData.data.title}\n*⚡ Publicado:* ${tiktokData.data.create_time
+            }\n\n*⚡ Estado:*\n=====================\nLikes = ${tiktokData.data.digg_count
             }\nComentarios = ${tiktokData.data.comment_count}\nCompartidas = ${tiktokData.data.share_count
             }\nVistas = ${tiktokData.data.play_count}\nDescargas = ${tiktokData.data.download_count
             }\n=====================\n\nUploader: ${tiktokData.data.author.nickname || "No info"
             }\n(${tiktokData.data.author.unique_id} - https://www.tiktok.com/@${tiktokData.data.author.unique_id
-            } )\n*✧ Sonido:* ${tiktokData.data.music
+            } )\n*🔊 Sonido:* ${tiktokData.data.music
             }\n`;
 
         if (videoURL || videoURLWatermark) {
