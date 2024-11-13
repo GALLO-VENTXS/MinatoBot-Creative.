@@ -26,7 +26,7 @@ let handler = async (m, { text, usedPrefix, command }) => {
         m.reply('*⚡ No se pueden procesar las solicitudes de búsqueda de DNS*')
       })
     })
-    m.reply(`*✧ Este es el resultado de la búsqueda de DNS para ${text}:*\n${res1}`)
+    m.reply(`*⚡ Este es el resultado de la búsqueda de DNS para ${text}:*\n${res1}`)
     console.log(res1)
 
   } catch (error) {
