@@ -9,7 +9,7 @@ let handler = async (m, { conn, args }) => {
             messageTimestamp: m.messageTimestamp
           }]
         }, jid);
-      conn.reply(m.chat, `✧ Se limpio el chat de ${jid}`, m);
+      conn.reply(m.chat, `𖣐 Se limpio el chat de ${jid}`, m);
     } catch (error) {
       console.error(error);
       conn.reply(m.chat, 'Error', m);
