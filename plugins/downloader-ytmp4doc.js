@@ -7,7 +7,7 @@ conn.sendMessage(m.chat, { react: { text: "🕒", key: m.key } });
 
   let d2 = await fetch(`https://exonity.tech/api/ytdlp2-faster?apikey=adminsepuh&url=${text}`)
   let dp = await d2.json()
-  m.reply(`_✧ Enviando ${dp.result.title} (${dp.result.duration})_\n\n> ${text}`)
+  m.reply(`_𖣐 Enviando ${dp.result.title} (${dp.result.duration})_\n\n> ${text}`)
     
 const getBuffer = async (url) => {
   try {
