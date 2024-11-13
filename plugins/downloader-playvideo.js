@@ -16,7 +16,7 @@ conn.sendMessage(m.chat, { react: { text: "🕒", key: m.key } });
     } = tes;
   let d2 = await fetch(`https://exonity.tech/api/ytdlp2-faster?apikey=adminsepuh&url=${url}`)
   let dp = await d2.json()
-  m.reply(`_✧ Enviando ${dp.result.title} (${dp.result.duration})_\n\n> ${url}`)
+  m.reply(`_𖣐 Enviando ${dp.result.title} (${dp.result.duration})_\n\n> ${url}`)
     
 const getBuffer = async (url) => {
   try {
@@ -29,7 +29,7 @@ const getBuffer = async (url) => {
   }
 }
     let videop = await getBuffer(dp.result.media.mp4)
-	await conn.sendFile(m.chat, videop, `${title}.mp4`, `\`✦ Pedido terminado\``, m)
+	await conn.sendFile(m.chat, videop, `${title}.mp4`, `\`❃ Pedido terminado\``, m)
 	await conn.sendMessage(m.chat, { react: { text: '✅', key: m.key }})
 }
 handler.help = ['playvideo']
