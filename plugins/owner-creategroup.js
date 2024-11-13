@@ -8,7 +8,7 @@ let handler = async (m, { conn, text }) => {
     let link = await conn.groupInviteCode(group.gid)
     let url = 'https://chat.whatsapp.com/' + link;
  /// console.log(chalk.bold.red('Membuat Grup: ' + group.gid + '\nNama Grup: ' + text + '\n\nViolet'))
-    m.reply('_✧ Se creo el grupo con éxito *' + text + '*_\n\n*Nombre:* ' + text + '\n*ID:* ' + group.gid + '\n*Link:* ' + url)
+    m.reply('_𖣐 Se creo el grupo con éxito *' + text + '*_\n\n*Nombre:* ' + text + '\n*ID:* ' + group.gid + '\n*Link:* ' + url)
        } catch (e) {
     m.reply(`Error`)
   }
