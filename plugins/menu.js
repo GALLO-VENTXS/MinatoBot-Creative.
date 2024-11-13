@@ -247,10 +247,10 @@ let handler = async (m, { conn, usedPrefix: _p, __dirname, args, command }) => {
       }
     };
 
-    conn.sendFile(m.chat, "https://pomf2.lain.la/f/vdj2bxy4.jpg", 'menu.jpg', estilo(text.trim()), global.fliveLoc2, null)
+    conn.sendFile(m.chat, "https://pomf2.lain.la/f/iw7h1r10.jpg", 'menu.jpg', estilo(text.trim()), global.fliveLoc2, null)
 
 /*conn.sendMessage(m.chat, {
-    document: { url: "https://pomf2.lain.la/f/8lplrwo2.jpg" }, 
+    document: { url: "https://pomf2.lain.la/f/dbtis07b.jpg" }, 
           mimetype: global.doc, 
           pageCount: 2025,
           fileName: `Hola ${name} ~`,
@@ -262,7 +262,7 @@ let handler = async (m, { conn, usedPrefix: _p, __dirname, args, command }) => {
             externalAdReply: {
               title: wm,
               mediaType: 1,
-              thumbnailUrl: 'https://pomf2.lain.la/f/8lplrwo2.jpg',
+              thumbnailUrl: 'https://pomf2.lain.la/f/dbtis07b.jpg',
               mediaUrl: sig,
               thumbnail: ``,
               sourceType: ``,
@@ -329,7 +329,7 @@ let handler = async (m, { conn, usedPrefix: _p, __dirname, args, command }) => {
             mediaType: 1,
             previewType: 0,
             renderLargerThumbnail: true,
-            thumbnailUrl: 'https://pomf2.lain.la/f/w0836qsb.jpg',
+            thumbnailUrl: 'https://pomf2.lain.la/f/0lgc1rw.jpg',
             sourceUrl: sgc,
           }
         }, mentions: [m.sender]
