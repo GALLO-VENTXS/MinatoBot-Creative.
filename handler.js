@@ -433,7 +433,7 @@ export async function handler(chatUpdate) {
                         }
                     }
                     if (m.limit)
-                        m.reply(+m.limit + ' Eris usado ✧ ')
+                        m.reply(+m.limit + ' Eris usado 𖣐 ')
                 }
                 break
             }
@@ -578,10 +578,10 @@ export async function deleteUpdate(message) {
             return
         this.reply(msg.chat, `
 _@${participant.split`@`[0]} eliminó un mensaje._
-*✧ Para desactivar esta función escribe:*
+*⚡ Para desactivar esta función escribe:*
 *.on delete*
           
-*✧ Para eliminar los mensajes del bot escribe:*
+*⚡ Para eliminar los mensajes del bot escribe:*
 *.delete*`, msg)
         this.copyNForward(msg.chat, msg).catch(e => console.log(e, msg))
     } catch (e) {
