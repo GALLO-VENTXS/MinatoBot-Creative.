@@ -4,13 +4,13 @@ let handler = async (m, { conn, text, usedPrefix, command }) => {
     let wm = global.wm
     let user = global.db.data.users[m.sender];
     if (user.isLoadingAnimeDif) {
-        await m.reply("   ✧ Aún se está dibujando su disfunción.");
+        await m.reply("   𖣐 Aún se está dibujando su disfunción.");
         return;
     }
 
 
     if (!text) {
-        throw m.reply(`El comando necesita una descripción para empezar a dibujar.\n\n  *✧ Ejemplo:*\n${usedPrefix + command} a girl with glasses, pink short hair, in a uniform, anime style, full body, bokeh`);
+        throw m.reply(`El comando necesita una descripción para empezar a dibujar.\n\n  *⚡ Ejemplo:*\n${usedPrefix + command} a girl with glasses, pink short hair, in a uniform, anime style, full body, bokeh`);
     }
     user.isLoadingAnimeDif = true;
     await m.reply(wait)
