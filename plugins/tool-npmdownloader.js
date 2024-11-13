@@ -2,7 +2,7 @@ import { exec } from 'child_process';
 import fs from 'fs';
 
 let handler = async (m, { conn, text, usedPrefix, command }) => {
-  if (!text) return m.reply(`*✦ Ejemplo* : ${usedPrefix + command} yt-search, versión (opcional)`);
+  if (!text) return m.reply(`*❃ Ejemplo* : ${usedPrefix + command} yt-search, versión (opcional)`);
 
   async function npmdownloader(pkg, pkgver) {
     try {
@@ -30,7 +30,7 @@ let handler = async (m, { conn, text, usedPrefix, command }) => {
         document: data,
         mimetype: "application/zip",
         fileName: fileName,
-        caption: `- \`✦ Nombre\`: ${fileName}\n- \`✧ Version\`: ${pkgver}\n- \`✦ Link\`: ${Link}`
+        caption: `- \`❃ Nombre\`: ${fileName}\n- \`𖣐 Version\`: ${pkgver}\n- \`❃ Link\`: ${Link}`
       }, {
         quoted: m
       });
