@@ -1,7 +1,7 @@
 import fetch from 'node-fetch'
 
 let handler = async (m, { conn, usedPrefix, command, text, args }) => {
-  if (!args[0]) throw m.reply(`*✧ Seleccióna una opción:*
+  if (!args[0]) throw m.reply(`*⚡ Seleccióna una opción:*
 awoo
 megumin
 neko
