@@ -3,8 +3,8 @@ let handler = async (m, { conn }) => {
   if (m.sender.startsWith('62') || m.sender.startsWith('+62')) {
     var txt = `
 (Español)
-**Términos de servicio (TOS) - Waguri Ai ESM**
-Al utilizar Waguri Ai ESM, usted acepta los siguientes términos:
+**Términos de servicio (TOS) - Minato Creative**
+Al utilizar Minato Creative, usted acepta los siguientes términos:
 
 1. *ESTÁ ESTRICTAMENTE PROHIBIDO CAMBIAR EL TEMPORIZADOR/MENSAJE TEMPORAL*
 El bot bloqueará automáticamente su número, para desbanear informe al propietario (+${global.nomorown}).
@@ -28,8 +28,8 @@ Registrarse significa aceptar los términos
 
     txt = `
 (Español)
-**Términos de servicio (TOS) - Waguri Ai ESM**
-Al utilizar Waguri Ai ESM, usted acepta los siguientes términos:
+**Términos de servicio (TOS) - Minato Creative**
+Al utilizar Minato Creative, usted acepta los siguientes términos:
 
 1. *ESTÁ ESTRICTAMENTE PROHIBIDO CAMBIAR EL TEMPORIZADOR/MENSAJE TEMPORAL*
 El bot bloqueará automáticamente su número, para desbanear informe al propietario (+${global.nomorown}).
