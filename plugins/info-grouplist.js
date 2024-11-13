@@ -7,7 +7,7 @@ ${txt}
 }
 handler.help = ['groups', 'grouplist']
 handler.tags = ['info']
-handler.command = /^(group(s|list))$/i
+handler.command = /^(group(s|list|listadegrupos))$/i
 
 handler.register = true
 
