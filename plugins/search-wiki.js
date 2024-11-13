@@ -5,7 +5,7 @@ const handler = async (m, { conn, text }) => {
   if (!text) {
     return await conn.sendMessage(
       m.chat,
-      { text: "✦ Ejemplo: .wikis Anime" },
+      { text: "❃ Ejemplo: .wikis Anime" },
       { quoted: m }
     );
   }
@@ -20,7 +20,7 @@ const handler = async (m, { conn, text }) => {
     if (searchResults.length === 0) {
       return await conn.sendMessage(
         m.chat,
-        { text: "✦ No hay respuesta de Wikipedia." },
+        { text: "❃ No hay respuesta de Wikipedia." },
         { quoted: m }
       );
     }
@@ -35,10 +35,10 @@ const handler = async (m, { conn, text }) => {
       if (index >= 4) return false;
     });
 
-    const message = `     *✧ Wiki Search ✦*\n\n` +
-                    `✦ *Titulo*: ${articleTitle}\n` +
-                    `✧ *Descripción*:\n${articleContent}\n` +
-                    `✦ *Link*: (${articleUrl})`;
+    const message = `     *❃ Wiki Search ❃*\n\n` +
+                    `𖣐 *Titulo*: ${articleTitle}\n` +
+                    `❃ *Descripción*:\n${articleContent}\n` +
+                    `𖣐 *Link*: (${articleUrl})`;
 
     await conn.sendMessage(m.chat, { text: message }, { quoted: m });
 
