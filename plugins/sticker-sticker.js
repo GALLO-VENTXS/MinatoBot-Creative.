@@ -44,7 +44,11 @@ let handler = async (m, { conn, args, usedPrefix, command }) => {
       }
       m.reply(stiker)
     } else {
-      m.reply('     `𖣐 Responde a una Imagen o Video.`')
+      m.reply('     `
+•❅──────✧✦✧──────❅•
+𖣐 Responde a una Imagen o Video.
+    ━━━━━━✧❃✧━━━━━━
+    `')
     }
   } catch (e) {
     console.error(e)
