@@ -2,15 +2,15 @@ import { addExif } from '../lib/sticker.js'
 
 
 let handler = async (m, { conn, text }) => {
-  if (!m.quoted) throw m.reply('✧ Menciona a un sticker!');
+  if (!m.quoted) throw m.reply('𖣐 Menciona a un sticker!');
   let stiker = false
   try {
     let [packname, ...author] = text.split('|')
     author = (author || []).join('|')
     let mime = m.quoted.mimetype || ''
-    if (!/webp/.test(mime)) throw m.reply('✧ Menciona a un sticker!');
+    if (!/webp/.test(mime)) throw m.reply('𖣐 Menciona a un sticker!');
     let img = await m.quoted.download()
-    if (!img) throw m.reply('✧ Menciona a un sticker!');
+    if (!img) throw m.reply('𖣐 Menciona a un sticker!');
     stiker = await addExif(img, packname || '', author || '')
   } catch (e) {
     console.error(e)
