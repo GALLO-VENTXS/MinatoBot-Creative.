@@ -1,7 +1,7 @@
 import fetch from 'node-fetch'
 
 let handler = async (m, { conn, args, usedPrefix, command }) => {
-if (db.data.chats[m.chat].nsfw == false && m.isGroup) return conn.reply(m.chat, `✧ El nsfw no esta activado, pidele a un admin que lo active escribiendo: *.on nsfw*`)
+if (db.data.chats[m.chat].nsfw == false && m.isGroup) return conn.reply(m.chat, `𖣐 El nsfw no esta activado, pidele a un admin que lo active escribiendo: *.on nsfw*`)
 let res = await fetch(`https://fantox-apis.vercel.app/${command}`)
 await m.react('🕓')
 try {
