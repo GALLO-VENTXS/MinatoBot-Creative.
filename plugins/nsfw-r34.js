@@ -1,5 +1,5 @@
 let handler = async (m, { conn, text, usedPrefix, command }) => {
-if (db.data.chats[m.chat].nsfw == false && m.isGroup) return conn.reply(m.chat, `✧ El nsfw no esta activado, pidele a un admin que lo active escribiendo: *.on nsfw*`)
+if (db.data.chats[m.chat].nsfw == false && m.isGroup) return conn.reply(m.chat, `𖣐 El nsfw no esta activado, pidele a un admin que lo active escribiendo: *.on nsfw*`)
 await m.react('🕓')
 try {
  async function rule34Random() {
