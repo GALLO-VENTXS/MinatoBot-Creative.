@@ -4,12 +4,12 @@ import moment from 'moment-timezone'
 
 let handler = async (m, { conn, text, usedPrefix, command }) => {
     conn.ownreply = conn.ownreply ? conn.ownreply : {}
-    if (!text) throw m.reply(`*✧ Ejemplo:*\n\n${usedPrefix + command} numero|mensaje\n\n*✧ Uso:* ${usedPrefix + command} ${m.sender.split`@`[0]}|Hola.`);
+    if (!text) throw m.reply(`*⚡ Ejemplo:*\n\n${usedPrefix + command} numero|mensaje\n\n*⚡ Uso:* ${usedPrefix + command} ${m.sender.split`@`[0]}|Hola.`);
     let [jid, pesan] = text.split('|');
-    if ((!jid || !pesan)) throw m.reply(`*✧ Ejemplo:*\n\n${usedPrefix + command} numero|mensaje\n\n*✧ Uso:* ${usedPrefix + command} ${m.sender.split`@`[0]}|Hola.`);
+    if ((!jid || !pesan)) throw m.reply(`*⚡ Ejemplo:*\n\n${usedPrefix + command} numero|mensaje\n\n*⚡ Uso:* ${usedPrefix + command} ${m.sender.split`@`[0]}|Hola.`);
     jid = jid.replace(/[^0-9]/g, '') + '@s.whatsapp.net';
     let data = (await conn.onWhatsApp(jid))[0] || {};
-    if (!data.exists) throw m.reply('✧ El numero no está registrado en whatsapp.');
+    if (!data.exists) throw m.reply('⚡ El numero no está registrado en whatsapp.');
     
    // if (jid == m.sender) throw 'tidak bisa mengirim pesan memfess ke diri sendiri.'
     
@@ -33,7 +33,7 @@ let handler = async (m, { conn, text, usedPrefix, command }) => {
                 }
             }
       }}, {}).then(() => {
-            m.reply('✧ Mensaje enviado con éxito.')
+            m.reply('𖣐 Mensaje enviado con éxito.')
             conn.ownreply[id] = {
                 id,
                 dari: m.sender,
