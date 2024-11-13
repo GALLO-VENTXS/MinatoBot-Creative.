@@ -1,6 +1,6 @@
 import fs from 'fs'
 let handler = async (m, { conn, text }) => {
-    m.reply('```✧ Enviando database del bot...```')
+    m.reply('```𖣐 Enviando database del bot...```')
     let sesi = await fs.readFileSync('./database.json')
     return await conn.sendMessage(m.chat, { document: sesi, mimetype: 'application/json', fileName: 'database.json' }, { quoted: m })
 }
