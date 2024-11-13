@@ -1,5 +1,5 @@
 var handler = async (m, { conn }) => {
-    if (!/viewOnce/.test(m.quoted?.mtype)) throw m.reply('✧ Responde a una Imagen o Video que se pueda ver una vez.');
+    if (!/viewOnce/.test(m.quoted?.mtype)) throw m.reply('𖣐 Responde a una Imagen o Video que se pueda ver una vez.');
     let mtype = Object.keys(m.quoted.message)[0]
     let buffer = await m.quoted.download()
     let caption = m.quoted.message[mtype].caption || ''
