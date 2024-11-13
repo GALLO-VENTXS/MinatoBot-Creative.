@@ -1,7 +1,7 @@
 import { GDriveDl } from '../lib/scrape.js'
 
 let handler = async (m, { conn, args }) => {
-	if (!(args[0] || '').match(/([\w-]){33}|([\w-]){19}/)) throw m.reply('✧ Ingresa el link de *GoogleDrive*')
+	if (!(args[0] || '').match(/([\w-]){33}|([\w-]){19}/)) throw m.reply('𖣐 Ingresa el link de *GoogleDrive*')
 
 	const someincludes = ( data, id ) => {
         let res = data.find(el => id.includes(el) )
