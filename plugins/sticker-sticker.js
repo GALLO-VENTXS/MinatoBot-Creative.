@@ -10,7 +10,7 @@ let handler = async (m, { conn, args, usedPrefix, command }) => {
 
     if (/video/g.test(mime)) {
       // Jalankan kode untuk video di sini
-      if ((q.msg || q).seconds > 10) return m.reply('✧ Máximo 10 segundos.')
+      if ((q.msg || q).seconds > 10) return m.reply('𖣐 Máximo 10 segundos.')
       let img = await q.download?.()
       if (!img) throw m.reply(`𖣐 Responde a un Vídeo con el comando*${usedPrefix + command}*`)
       let stiker = false
