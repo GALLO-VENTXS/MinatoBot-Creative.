@@ -5,7 +5,7 @@ let handler = async (m, {
 	let warning = global.db.data.users[m.sender].warning
 
 	let ndy = `
-*✧ Usted tiene ${warning} Advertencias*
+*⚡ Usted tiene ${warning} Advertencias*
  `.trim()
 	conn.reply(m.chat, ndy, m)
 }
