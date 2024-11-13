@@ -1,7 +1,7 @@
 import { snapsave } from '@bochilteam/scraper'
 
 let handler = async (m, { conn, args }) => {
-    if (!args[0]) throw m.reply('✧ Ingresa el link de *Instagram*')
+    if (!args[0]) throw m.reply('𖣐 Ingresa el link de *Instagram*')
     const sender = m.sender.split('@')[0];
     const url = args[0];
 
@@ -15,7 +15,7 @@ let handler = async (m, { conn, args }) => {
 
         if (video) {
             const videoBuffer = await fetch(video.url).then(res => res.buffer());
-            const caption = `✧ Para: @${sender}`;
+            const caption = `𖣐 Para: @${sender}`;
 
             await conn.sendMessage(
                 m.chat, {
