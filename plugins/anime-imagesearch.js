@@ -43,7 +43,7 @@ let handler = async (m, { conn, usedPrefix, command }) => {
 
 handler.help = ['animesearch']
 handler.tags = ['anime']
-handler.command = /^(animesearch|101010)$/i
+handler.command = /^(animesearch)$/i
 
 handler.register = true
 handler.limit = false
