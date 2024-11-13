@@ -8,7 +8,7 @@ let handler = async (m, { conn, text }) => {
 			: m.mentionedJid?.[0]
 		? await conn.profilePictureUrl(m.mentionedJid[0], 'image')
 			: await conn.profilePictureUrl(m.quoted?.sender || m.sender, 'image')
-	if (!image) throw m.reply(`✧ Responde a una *Imagen*.`)
+	if (!image) throw m.reply(`𖣐 Responde a una *Imagen*.`)
 	let level = text || '5', img = await jimp.read(image)
 	img.blur(isNaN(level) ? 5 : parseInt(level))
 	img.getBuffer('image/jpeg', (err, buffer) => {
