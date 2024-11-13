@@ -7,7 +7,7 @@ let handler = async (m, { conn, participants }) => {
             const res = await conn.groupParticipantsUpdate(m.chat, [user], 'promote')
             await delay(1 * 1000)
         }
-    m.reply('✧ Listo')
+    m.reply('𖣐 Listo')
 
 }
 handler.help = ['promote @tag']
