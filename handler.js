@@ -377,7 +377,7 @@ export async function handler(chatUpdate) {
                     continue // Limit habis
                 }
                 if (plugin.level > _user.level) {
-                    this.reply(m.chat, `✧ Necesitas estar en el nivel ${plugin.level} para usar este comando.\n*✧ Su nivel actualmente:* ${_user.level} 📊`, m)
+                    this.reply(m.chat, `⚡ Necesitas estar en el nivel ${plugin.level} para usar este comando.\n*⚡ Su nivel actualmente:* ${_user.level} 📊`, m)
                     continue // If the level has not been reached
                 }
                 let extra = {
@@ -419,7 +419,7 @@ export async function handler(chatUpdate) {
                             for (let [jid] of global.owner.filter(([number, _, isDeveloper]) => isDeveloper && number)) {
                                 let data = (await conn.onWhatsApp(jid))[0] || {}
                                 if (data.exists)
-                                    m.reply(`*✧ Plugin:* ${m.plugin}\n*⚡ Emisor:* ${m.sender}\n*⚡ Chat:* ${m.chat}\n*⚡ Comando:* ${usedPrefix}${command} ${args.join(' ')}\n⚡ *Error Logs:*\n\n\`\`\`${e}\`\`\``.trim(), data.jid)
+                                    m.reply(`*⚡ Plugin:* ${m.plugin}\n*⚡ Emisor:* ${m.sender}\n*⚡ Chat:* ${m.chat}\n*⚡ Comando:* ${usedPrefix}${command} ${args.join(' ')}\n⚡ *Error Logs:*\n\n\`\`\`${e}\`\`\``.trim(), data.jid)
                             }
                         //m.reply(text)
                     }
