@@ -36,7 +36,7 @@ let handler = async (m, { conn, text, command, usedPrefix }) => {
   users[senderId].limit += amountTaken
   users[randomUserId].limit -= amountTaken
   conn.sendMessage(m.chat, {
-        text: `✧¡Lograste cometer tu crimen con exito!, acabas de robar *${amountTaken} ❇️ Eris* a @${randomUserId.split("@")[0]}\n\nSe suman *+${amountTaken} ❇️ Eris* a ${senderName}.`,
+        text: `𖣐¡Lograste cometer tu crimen con exito!, acabas de robar *${amountTaken} ❇️ Eris* a @${randomUserId.split("@")[0]}\n\nSe suman *+${amountTaken} ❇️ Eris* a ${senderName}.`,
   contextInfo: { 
   mentionedJid: [randomUserId],
   }
@@ -46,7 +46,7 @@ let handler = async (m, { conn, text, command, usedPrefix }) => {
   case 1:
   let amountSubtracted = Math.min(Math.floor(Math.random() * (senderLimit - minAmount + 1)) + minAmount, maxAmount)
   users[senderId].limit -= amountSubtracted
-  conn.reply(m.chat, `✧ No fuiste cuidadoso y te atraparon mientras cometias tu cirme, se restaron *-${amountSubtracted} ❇️ Eris* a ${senderName}.`, m)
+  conn.reply(m.chat, `𖣐 No fuiste cuidadoso y te atraparon mientras cometias tu cirme, se restaron *-${amountSubtracted} ❇️ Eris* a ${senderName}.`, m)
   break
 
   case 2:
