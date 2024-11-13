@@ -43,7 +43,7 @@ El bot bloqueará permanentemente su número si hay una indicación de spam en s
 4. *PROPIETARIO DEL CHAT SI ES NECESARIO*
 No tiene sentido chatear con el número de bot, porque el número de bot se almacena en el servidor y el propietario no verá su chat.
 
-Al utilizar Waguri Ai ESM, usted acepta todos los términos aplicables.
+Al utilizar Minato Creative, usted acepta todos los términos aplicables.
 
 *Estos términos se actualizaron por última vez el 12 de mayo de 2024.*
 
@@ -77,7 +77,7 @@ Registrarse significa aceptar los términos
           mediaType: 1,
           previewType: 0,
           renderLargerThumbnail: true,
-          thumbnailUrl: 'https://pomf2.lain.la/f/33iksjmi.jpg',
+          thumbnailUrl: 'https://pomf2.lain.la/f/zxs9pv8l.jpg',
           sourceUrl: 'https://www.instagram.com/gallo_ventxs',
         }
       }, mentions: [m.sender]
