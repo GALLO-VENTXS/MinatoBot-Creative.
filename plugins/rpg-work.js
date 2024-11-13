@@ -5,7 +5,7 @@ let user = global.db.data.users[m.sender]
   let tiempoEspera = 5 * 60
   if (cooldowns[m.sender] && Date.now() - cooldowns[m.sender] < tiempoEspera * 1000) {
     const tiempoRestante = segundosAHMS(Math.ceil((cooldowns[m.sender] + tiempoEspera * 1000 - Date.now()) / 1000))
-    conn.reply(m.chat, `✧ Espera ⏱ *${tiempoRestante}* para volver a Trabajar.`, m, rcanal)
+    conn.reply(m.chat, `⚡ Espera ⏱ *${tiempoRestante}* para volver a Trabajar.`, m, rcanal)
     return
   }
   let resultado = Math.floor(Math.random() * 5000)
