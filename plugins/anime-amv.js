@@ -13,7 +13,7 @@ let handler = async (m, {
     if (text == '1') {
         try {
             let resl = await animeVideo()
-            let cap = `✧ Listo~`
+            let cap = `𖣐 Listo~`
             await conn.sendFile(m.chat, resl.source, "", cap, m)
         } catch (e) {
             await m.reply(eror)
@@ -22,7 +22,7 @@ let handler = async (m, {
     if (text == '2') {
         try {
             let resl = await animeVideo2()
-            let cap = `✧ Listo~`
+            let cap = `𖣐 Listo~`
             await conn.sendFile(m.chat, resl.source, "", cap, m)
         } catch (e) {
             await m.reply(eror)
