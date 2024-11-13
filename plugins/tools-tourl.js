@@ -29,10 +29,10 @@ let handler = async m => {
     let url = await uploadPomf(media2)
     const caption = `\`T O U R L - U P L O A D\`
 
-✧Uguu Link:
+⚡Uguu Link:
 ${files[0]?.url}
 
-✧Pomf2 Link:
+⚡Pomf2 Link:
 ${url}
 
 ${wm}`
