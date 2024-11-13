@@ -3,7 +3,7 @@ handler.before = m => {
   let user = global.db.data.users[m.sender]
   if (user.afk > -1) {
     m.reply(`
-✧ Ahora estas AFK${user.afkReason ? ' \n\n*Razón:*' + user.afkReason : ''}
+𖣐 Ahora estas AFK${user.afkReason ? ' \n\n*Razón:*' + user.afkReason : ''}
 *Durante:* ${(new Date - user.afk).toTimeString()}
 `.trim())
     user.afk = -1
@@ -17,7 +17,7 @@ handler.before = m => {
     if (!afkTime || afkTime < 0) continue
     let reason = user.afkReason || ''
     m.reply(`
-    _*✧ ¡No lo menciones!*_
+    _*⚡ ¡No lo menciones!*_
 Ahora está AFK ${reason ? '\nRazón ' + reason : ''}
 *Durante:* ${(new Date - afkTime).toTimeString()}
 `.trim())
