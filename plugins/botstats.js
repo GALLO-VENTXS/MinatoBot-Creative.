@@ -10,24 +10,24 @@ let handler = async (m, { conn, generateWAMessageFromContent, }) => {
     let _uptime = process.uptime() * 1000
     let uptime = clockString(_uptime)
     let sts = `┌────〔 Estado 〕───⬣
-│✧  Runtina ${uptime}
-│✧  *${groups.length}* Grupos
-│✧  *${chats.length - groups.length}* Pv's
-│✧  *${Object.keys(global.db.data.users).length}* Usuarios
-│✧  ${block == undefined ? '*0* Bloqueados' : '*' + block.length + '* Desbloqueados'}
-│✧  *${Object.entries(global.db.data.chats).filter(chat => chat[1].isBanned).length}* Chats Baneados
-│✧  *${Object.entries(global.db.data.users).filter(user => user[1].banned).length}* Usuarios Baneados
+│𖣐  Runtina ${uptime}
+│𖣐  *${groups.length}* Grupos
+│𖣐  *${chats.length - groups.length}* Pv's
+│𖣐  *${Object.keys(global.db.data.users).length}* Usuarios
+│𖣐  ${block == undefined ? '*0* Bloqueados' : '*' + block.length + '* Desbloqueados'}
+│𖣐  *${Object.entries(global.db.data.chats).filter(chat => chat[1].isBanned).length}* Chats Baneados
+│𖣐  *${Object.entries(global.db.data.users).filter(user => user[1].banned).length}* Usuarios Baneados
 ╰────────────⬣
 
 ┌───〔 Modos 〕───⬣
-│✧  ${anon ? '✅' : '❌'} *Chat Anonimo*
-│✧  ${anticall ? '✅' : '❌'} *Anti Llamar*
-│✧  ${antispam ? '✅' : '❌'} *Anti Spam*
-│✧  ${antitroli ? '✅' : '❌'} *Anti Bug Text*
-│✧  ${backup ? '✅' : '❌'} *Auto Backup DB*
-│✧  ${groupOnly ? '✅' : '❌'} *Modo Grupo*
-│✧  ${jadibot ? '✅' : '❌'} *Serbot*
-│✧  ${nsfw ? '✅' : '❌'} *Modo Nsfw*
+│𖣐  ${anon ? '✅' : '❌'} *Chat Anonimo*
+│𖣐  ${anticall ? '✅' : '❌'} *Anti Llamar*
+│𖣐  ${antispam ? '✅' : '❌'} *Anti Spam*
+│𖣐  ${antitroli ? '✅' : '❌'} *Anti Bug Text*
+│𖣐  ${backup ? '✅' : '❌'} *Auto Backup DB*
+│𖣐  ${groupOnly ? '✅' : '❌'} *Modo Grupo*
+│𖣐  ${jadibot ? '✅' : '❌'} *Serbot*
+│𖣐  ${nsfw ? '✅' : '❌'} *Modo Nsfw*
 ╰────────────⬣`
 
 m.reply(sts)
