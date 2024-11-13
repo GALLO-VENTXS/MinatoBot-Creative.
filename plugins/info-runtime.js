@@ -12,7 +12,7 @@ let handler = async (m, { conn, args, command }) => {
     }
     let muptime = clockString(_muptime)
     
-m.reply(`*✧ Rutina*\n${muptime}`)
+m.reply(`*⚡ Rutina*\n${muptime}`)
 
 }
 handler.help = ['rutina']
