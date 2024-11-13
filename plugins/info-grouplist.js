@@ -1,7 +1,7 @@
 let handler = async (m, { conn }) => {
     let txt = ''
     for (let [jid, chat] of Object.entries(conn.chats).filter(([jid, chat]) => jid.endsWith('@g.us') && chat.isChats)) txt += `${await conn.getName(jid)}\n🪪${jid} [${chat?.metadata?.read_only ? 'Salio' : 'Unido'}]\n\n`
-    m.reply(`*✧ Lista de grupos:*
+    m.reply(`*𖣐 Lista de grupos:*
 ${txt}
 `.trim())
 }
