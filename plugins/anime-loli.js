@@ -5,7 +5,7 @@ let handler = async (m, { conn, text }) => {
   if (!res.ok) throw await `${res.status} ${res.statusText}`;
   let json = await res.json();
   let url = json[Math.floor(Math.random() * json.length)]
-  await conn.sendFile(m.chat, url, null, '✧ Loli', '', m)
+  await conn.sendFile(m.chat, url, null, '𖣐 Loli', '', m)
 }
 
 handler.command = /^(loli)$/i
