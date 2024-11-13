@@ -2,7 +2,7 @@ import axios from 'axios'
 import cheerio from 'cheerio'
 
 let handler = async (m, { conn, args }) => {
-    if (!args[0]) throw m.reply('✧ Por favor ingresa el link de X');
+    if (!args[0]) throw m.reply('𖣐 Por favor ingresa el link de X');
     const sender = m.sender.split('@')[0];
     const url = args[0];
 
