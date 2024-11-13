@@ -8,7 +8,7 @@ try {
 if (!m.quoted.text) return m.reply(`𖣐 Responder al mensaje.`)
 let path = `${text}`
 await fs.writeFileSync(path, m.quoted.text)
-m.reply(`✧ Guardado en *${path}*.`)
+m.reply(`𖣐 Guardado en *${path}*.`)
 } catch {
 await m.reply(`𖣐 Responder al mensaje.`)
 }}
