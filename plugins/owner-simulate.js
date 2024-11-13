@@ -1,5 +1,5 @@
 let handler = async (m, { conn, usedPrefix, command, args: [event], text }) => {
-    if (!event) return await conn.reply(m.chat, `✧ Ejemplo:
+    if (!event) return await conn.reply(m.chat, `𖣐 Ejemplo:
 ${usedPrefix + command} welcome @user
 ${usedPrefix + command} bye @user
 ${usedPrefix + command} promote @user
