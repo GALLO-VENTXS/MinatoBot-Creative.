@@ -7,8 +7,8 @@ let handler = async (m, { conn, args }) => {
     if (!groupMetadata) throw ' :\\'
     if (!('participants' in groupMetadata)) throw ' :('
     let me = groupMetadata.participants.find(user => areJidsSameUser(user.id, conn.user.id))
-    if (!me) throw m.reply('✧ No estoy en ese grupo :(')
-    if (!me.admin) throw m.reply('✧ No soy admin T_T')
+    if (!me) throw m.reply('𖣐 No estoy en ese grupo :(')
+    if (!me.admin) throw m.reply('𖣐 No soy admin T_T')
     m.reply('https://chat.whatsapp.com/' + await conn.groupInviteCode(group))
 }
 handler.help = ['linkgroup']
