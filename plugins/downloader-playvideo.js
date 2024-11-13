@@ -2,7 +2,7 @@ import fetch from 'node-fetch'
 import yts from 'yt-search'
 
 let handler = async (m, { conn, text, usedPrefix, command }) => {
-if (!text) throw m.reply(`Ingresa una consulta\n*✧ Ejemplo:* ${usedPrefix}${command} Waguri Edit`);
+if (!text) throw m.reply(`Ingresa una consulta\n*✧ Ejemplo:* ${usedPrefix}${command} Minato Edit`);
 conn.sendMessage(m.chat, { react: { text: "🕒", key: m.key } });
     let results = await yts(text);
     let tes = results.all[0]
