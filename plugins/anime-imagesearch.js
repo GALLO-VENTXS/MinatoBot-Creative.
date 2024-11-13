@@ -5,7 +5,7 @@ let handler = async (m, { conn, usedPrefix, command }) => {
     try {
         let q = m.quoted ? m.quoted : m;
         let mime = (q.msg || q).mimetype || '';
-        if (!mime) throw m.reply(`✧ Responde a una *Imagen* con el comando ${usedPrefix + command}`);
+        if (!mime) throw m.reply(`𖣐 Responde a una *Imagen* con el comando ${usedPrefix + command}`);
 
         m.reply(wait);
 
