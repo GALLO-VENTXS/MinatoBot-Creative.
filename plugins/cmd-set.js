@@ -1,8 +1,8 @@
 let handler = async (m, { conn, text, usedPrefix, command }) => {
     db.data.sticker = db.data.sticker || {}
-    if (!m.quoted) throw m.reply(`✧ Responde a un *Sticker* con el comando *${usedPrefix + command}*`)
+    if (!m.quoted) throw m.reply(`𖣐 Responde a un *Sticker* con el comando *${usedPrefix + command}*`)
     if (!m.quoted.fileSha256) throw m.reply('???')
-    if (!text) throw m.reply(`✧ Ejemplo:\n${usedPrefix + command} <txt>\n\n✧ Uso:\n${usedPrefix + command} .ping`)
+    if (!text) throw m.reply(`𖣐 Ejemplo:\n${usedPrefix + command} <txt>\n\n✧ Uso:\n${usedPrefix + command} .ping`)
     let sticker = db.data.sticker
     let hash = m.quoted.fileSha256.toString('base64')
     if (sticker[hash] && sticker[hash].locked) throw m.reply('Este *Sticker* ya está configurado')
