@@ -5,7 +5,7 @@ export async function before(m) {
 	if (!mf) return !0
 	console.log(m)
 	if (m.text === 'Balas' && m.quoted.mtype == 'buttonsMessage') return m.reply("Por favor envía tu mensaje de respuesta.");
-	let txt = `✧ Hola @${mf.dari.split('@')[0]}, recibiste una respuesta.\n\nEl mensaje de respuesta:\n${m.text}\n`.trim();
+	let txt = `𖣐 Hola @${mf.dari.split('@')[0]}, recibiste una respuesta.\n\nEl mensaje de respuesta:\n${m.text}\n`.trim();
 	await this.reply(mf.dari, txt, null).then(() => {
 		m.reply('Respuesta anonima enviada.')
 		this.delay(1000)
