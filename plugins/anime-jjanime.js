@@ -11,7 +11,7 @@ let handler = async (m, { conn, usedPrefix, command }) => {
 
         if (result.type === 'search') {
             let searchResults = result.videos.map((v, i) => `${i + 1}. *${v.title}* (${v.views} vistas)\nLink: ${v.url}`).join('\n\n');
-            m.reply(`✧ Resultados de "${result.query}":\n\n${searchResults}`);
+            m.reply(`𖣐 Resultados de "${result.query}":\n\n${searchResults}`);
         } else if (result.type === 'download') {
             const { title, url, seconds, views, dl } = result.download;
             let message = `*Titulo*: ${title}\n*Duración*: ${seconds} segundos\n*Vistas*: ${views}\nLink YouTube: ${url}\nCalidad: 720p`;
