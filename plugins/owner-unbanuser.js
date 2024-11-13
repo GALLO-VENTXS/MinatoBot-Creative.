@@ -1,8 +1,8 @@
 let handler = async (m, { conn, text }) => {
-    if (!text) throw m.reply('✧ A quien desbaneo?, Menciona al usuario luego de escribir el comando')
+    if (!text) throw m.reply('𖣐 A quien desbaneo?, Menciona al usuario luego de escribir el comando')
     let who
     if (m.isGroup) {
-        if (!m.mentionedJid) throw m.reply('✧ A quien desbaneo?, Menciona al usuario luego de escribir el comando')
+        if (!m.mentionedJid) throw m.reply('𖣐 A quien desbaneo?, Menciona al usuario luego de escribir el comando')
         who = m.mentionedJid[0]
     } else {
         // Check if the input is a valid phone number
@@ -13,9 +13,9 @@ let handler = async (m, { conn, text }) => {
     if (users[who]) {
         users[who].banned = false
         users[who].banReason = ''
-        conn.reply(m.chat, '✧ Listo!', m)
+        conn.reply(m.chat, '𖣐 Listo!', m)
     } else {
-        throw m.reply('✧ El usuario no se encuentra en la base de datos.')
+        throw m.reply('𖣐 El usuario no se encuentra en la base de datos.')
     }
 }
 handler.help = ['unban']
