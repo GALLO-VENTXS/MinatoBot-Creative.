@@ -289,16 +289,16 @@ global.reloadHandler = async function (restatConn) {
 
 conn.welcome = '❖━━━━━━[ BIENVENIDO ]━━━━━━❖\n\n┏------━━━━━━━━•\n│☘︎ @subject\n┣━━━━━━━━┅┅┅\n│( 👋 Hola @user)\n├[ Introducción ]—\n│ Nombre: \n│ Edad: \n│ Genero:\n┗------━━┅┅┅\n\n------┅┅ Descripción ┅┅––––––\n@desc'
   conn.bye = '❖━━━━━━[ BYEBYE ]━━━━━━❖\n\nSayonara @user 👋😃'
-  conn.spromote = '*✧ @user ahora es admin!*'
-  conn.sdemote = '*✧ @user ya no es admin!*'
-  conn.sDesc = '*✧ La descripción se actualizó a* \n@desc'
-  conn.sSubject = '*✧ El nombre del grupo fue alterado a* \n@subject'
-  conn.sIcon = '*✧ Se actualizó el nombre del grupo!*'
-  conn.sRevoke = '*✧ El link del grupo se actualizó a* \n@revoke'
-  conn.sAnnounceOn = '*✧ Grupo cerrado!*\n> Ahora solo los admins pueden enviar mensajes.'
-      conn.sAnnounceOff = '*✧ El grupo fue abierto!*\n> Ahora todos pueden enviar mensajes.'
-  conn.sRestrictOn = '*✧ Ahora solo los admin podran editar la información del grupo!*'
-  conn.sRestrictOff = '*✧ Ahora todos pueden editar la información del grupo!*'
+  conn.spromote = '*𖣐 @user ahora es admin!*'
+  conn.sdemote = '*𖣐 @user ya no es admin!*'
+  conn.sDesc = '*𖣐 La descripción se actualizó a* \n@desc'
+  conn.sSubject = '*𖣐 El nombre del grupo fue alterado a* \n@subject'
+  conn.sIcon = '*𖣐 Se actualizó el nombre del grupo!*'
+  conn.sRevoke = '*𖣐 El link del grupo se actualizó a* \n@revoke'
+  conn.sAnnounceOn = '*𖣐 Grupo cerrado!*\n> Ahora solo los admins pueden enviar mensajes.'
+      conn.sAnnounceOff = '*𖣐 El grupo fue abierto!*\n> Ahora todos pueden enviar mensajes.'
+  conn.sRestrictOn = '*𖣐 Ahora solo los admin podran editar la información del grupo!*'
+  conn.sRestrictOff = '*𖣐 Ahora todos pueden editar la información del grupo!*'
 
   conn.handler = handler.handler.bind(global.conn)
   conn.participantsUpdate = handler.participantsUpdate.bind(global.conn)
