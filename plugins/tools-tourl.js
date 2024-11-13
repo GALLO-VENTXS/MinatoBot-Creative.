@@ -10,7 +10,7 @@ let handler = async m => {
     const q = m.quoted || m
     const mime = q.mediaType || ""    
     if (!/image|video|audio|sticker|document/.test(mime)) 
-      throw m.reply("✧ No hay medios marcados!")
+      throw m.reply("𖣐 No hay medios marcados!")
           await conn.sendMessage(m.chat, { react: { text: '🔗', key: m.key } });
     const media = await q.download(true)
     let media2 = await q.download()
