@@ -1,9 +1,9 @@
 import fetch from 'node-fetch'
 
 let handler = async (m, { text, usedPrefix, command }) => {
-  if (!text) throw m.reply(`✧ Ingresa el Dominio/Sub Dominio!\n\n*✧ Ejemplo:* ryzendesu.com`);
+  if (!text) throw m.reply(`𖣐 Ingresa el Dominio/Sub Dominio!\n\n*✧ Ejemplo:* ryzendesu.com`);
 
-  if (text.includes('https://') || text.includes('http://')) throw m.reply(`✧ Ingresa el Dominio/Sub Dominio!\n\n*✧ Ejemplo:* ryzendesu.com`);
+  if (text.includes('https://') || text.includes('http://')) throw m.reply(`𖣐 Ingresa el Dominio/Sub Dominio!\n\n*⚡ Ejemplo:* ryzendesu.com`);
 
   try {
     // fetch pertama
@@ -18,12 +18,12 @@ let handler = async (m, { text, usedPrefix, command }) => {
       return fetch(`https://api.hackertarget.com/dnslookup/?q=${text}`)
       .then(response => response.text())
       .then(data => {
-        m.reply(`*✧ Este es el resultado de la búsqueda de DNS para ${text}:*\n${data}`)
+        m.reply(`*⚡ Este es el resultado de la búsqueda de DNS para ${text}:*\n${data}`)
         console.log(data)
       })
       .catch(error => {
         console.error(error)
-        m.reply('*✧ No se pueden procesar las solicitudes de búsqueda de DNS*')
+        m.reply('*⚡ No se pueden procesar las solicitudes de búsqueda de DNS*')
       })
     })
     m.reply(`*✧ Este es el resultado de la búsqueda de DNS para ${text}:*\n${res1}`)
