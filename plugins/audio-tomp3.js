@@ -4,7 +4,7 @@ let handler = async (m, { conn, usedPrefix, command }) => {
     let chat = global.db.data.chats[m.chat]
     let q = m.quoted ? m.quoted : m
     let mime = (m.quoted ? m.quoted : m.msg).mimetype || ''
-    if (!/video|audio/.test(mime)) throw m.reply(`✧ Responde a un *Video* o *Nota de voz* con el comando *${usedPrefix + command}*`);
+    if (!/video|audio/.test(mime)) throw m.reply(`𖣐 Responde a un *Video* o *Nota de voz* con el comando *${usedPrefix + command}*`);
     let media = await q.download?.()
     if (!media) throw ''
     let audio = await toAudio(media, 'mp4')
