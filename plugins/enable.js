@@ -270,7 +270,7 @@ let handler = async (m, { conn, usedPrefix, command, args, isOwner, isAdmin, isR
       break
     default:
       if (!/[01]/.test(command)) return m.reply(`
-*✧ Lista de opciones:*
+*⚡ Lista de opciones:*
 
 | antidelete
 | antilink
@@ -296,14 +296,14 @@ let handler = async (m, { conn, usedPrefix, command, args, isOwner, isAdmin, isR
 | whitelistmycontacts
 | welcome
 
-*✧ Ejemplo:*
+*⚡ Ejemplo:*
 ${usedPrefix}on welcome
 ${usedPrefix}off welcome
 `.trim())
       throw false
   }
   m.reply(`
-✧ *${type}* fué *${isEnable ? 'Acti' : 'Desacti'}vado* ${isAll ? 'en el bot' : isUser ? '' : 'en el chat'}
+𖣐 *${type}* fué *${isEnable ? 'Acti' : 'Desacti'}vado* ${isAll ? 'en el bot' : isUser ? '' : 'en el chat'}
 `.trim())
 }
 
