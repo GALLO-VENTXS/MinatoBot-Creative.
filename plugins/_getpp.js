@@ -10,7 +10,7 @@ let handler = async (m, { conn, command }) => {
     } catch {
         let sender = m.sender
         let pp = await conn.profilePictureUrl(sender, 'image').catch((_) => "https://telegra.ph/file/24fa902ead26340f3df2c.png")
-        conn.sendFile(m.chat, pp, 'ppsad.png', "✧ Listo....", m, { jpegThumbnail: await (await fetch(pp)).buffer() })
+        conn.sendFile(m.chat, pp, 'ppsad.png', "⚡ Listo....", m, { jpegThumbnail: await (await fetch(pp)).buffer() })
     }
 }
 handler.help = ['getpp <@tag/msj>']
