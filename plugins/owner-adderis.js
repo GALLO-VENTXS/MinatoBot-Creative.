@@ -1,12 +1,12 @@
 let handler = async (m, { conn, command, text, args }) => {
-    if (!text) throw m.reply('✧ Menciona a un usuario luego de escribir un comando')
+    if (!text) throw m.reply('𖣐 Menciona a un usuario luego de escribir un comando')
     let who
     if (m.isGroup) who = m.mentionedJid[0]
     else who = m.chat
-    if (!who) throw m.reply('✧ Menciona a un usuario luego de escribir un comando')
+    if (!who) throw m.reply('𖣐 Menciona a un usuario luego de escribir un comando')
     let users = global.db.data.users
     users[who].limit += 100000
-    conn.reply(m.chat, '✧ Listo!', m)
+    conn.reply(m.chat, '𖣐 Listo!', m)
 }
 handler.help = ['adderis']
 handler.tags = ['owner']
