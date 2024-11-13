@@ -223,23 +223,23 @@ async function connectionUpdate(update) {
   }
 
   if (connection == 'connecting') {
-    console.log(chalk.redBright('✦ Activando el bot, por favor espere un momento...'));
+    console.log(chalk.redBright('❃ Activando el bot, por favor espere un momento...'));
   } else if (connection == 'open') {
     console.log(chalk.green('✅ Conectado'));
   }
 
   if (isOnline == true) {
-    console.log(chalk.green('✦ Estado online'));
+    console.log(chalk.green('❃ Estado online'));
   } else if (isOnline == false) {
-    console.log(chalk.red('✦ Estado offline'));
+    console.log(chalk.red('❃ Estado offline'));
   }
 
   if (receivedPendingNotifications) {
-    console.log(chalk.yellow('✧ Esperando mensajes'));
+    console.log(chalk.yellow('𖣐 Esperando mensajes'));
   }
 
   if (connection == 'close') {
-    console.log(chalk.red('✦ Desconectado e intentando volver a conectarse...'));
+    console.log(chalk.red('❃ Desconectado e intentando volver a conectarse...'));
   }
 
   global.timestamp.connect = new Date;
