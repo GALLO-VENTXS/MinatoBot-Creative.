@@ -26,33 +26,33 @@ let estilo = (text, style = 1) => {
 };
 const defaultMenu = {
   before: `
-✧ *Nombre:*  %name 
-✧ *Numero:* %tag
-✧ *Usuario:* %prems
-✧ *Eris:* %limit
-✧ *Rol:* %role
+𖣐 *Nombre:*  %name 
+𖣐 *Numero:* %tag
+𖣐 *Usuario:* %prems
+𖣐 *Eris:* %limit
+𖣐 *Rol:* %role
 
-✧ *Día:* %week
-✧ *Fecha:* %date
-✧ *Hora:* %time
+𖣐 *Día:* %week
+𖣐 *Fecha:* %date
+𖣐 *Hora:* %time
 
-✧ *Nombre Bot:* %me
-✧ *Modo:* %mode
-✧ *Prefijo:* [ *%_p* ]
-✧ *Plataforma:* %platform
-✧ *Tipo:* Node.JS
-✧ *Runtina:* %muptime
-✧ *Database:* %rtotalreg de %totalreg
+𖣐 *Nombre Bot:* %me
+𖣐 *Modo:* %mode
+𖣐 *Prefijo:* [ *%_p* ]
+𖣐 *Plataforma:* %platform
+𖣐 *Tipo:* Node.JS
+𖣐 *Runtina:* %muptime
+𖣐 *Database:* %rtotalreg de %totalreg
 
-⬣───「 *INFO CMD* 」───⬣
+❃───「 *INFO CMD* 」───❃
 │ *Ⓟ* = Premium
 │ *Ⓛ* = Eris
-▣────────────⬣
+▣────────────❃
   %readmore
   `.trimStart(),
     header: '╭─────『 %category 』',
-    body: '  ✧%cmd %isPremium %islimit',
-    footer: '╰–––––––––––––––༓',
+    body: '  𖣐%cmd %isPremium %islimit',
+    footer: '╰–––––––––––––––|᪶፝֟‿',
     after: ``,
   }
 let handler = async (m, { conn, usedPrefix: _p, __dirname, args, command }) => {
