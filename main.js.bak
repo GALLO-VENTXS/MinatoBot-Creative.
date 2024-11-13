@@ -235,7 +235,7 @@ async function connectionUpdate(update) {
   }
 
   if (receivedPendingNotifications) {
-    console.log(chalk.yellow('✧ Esperando mensajes'));
+    console.log(chalk.yellow('❃ Esperando mensajes'));
   }
 
   if (connection == 'close') {
