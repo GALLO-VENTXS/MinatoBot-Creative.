@@ -303,7 +303,7 @@ ${usedPrefix}off welcome
       throw false
   }
   m.reply(`
-✧ *${type}* fué *${isEnable ? 'Acti' : 'Desacti'}vado* ${isAll ? 'en el bot' : isUser ? '' : 'en el chat'}
+𖣐 *${type}* fué *${isEnable ? 'Acti' : 'Desacti'}vado* ${isAll ? 'en el bot' : isUser ? '' : 'en el chat'}
 `.trim())
 }
 
