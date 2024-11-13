@@ -1,7 +1,7 @@
 import fetch from 'node-fetch'
 
 let handler = async (m, { conn }) => {
-        if (db.data.chats[m.chat].nsfw == false && m.isGroup) return conn.reply(m.chat, `✧ El nsfw no esta activado, pidele a un admin que lo active escribiendo: *.on nsfw*`)
+        if (db.data.chats[m.chat].nsfw == false && m.isGroup) return conn.reply(m.chat, `𖣐 El nsfw no esta activado, pidele a un admin que lo active escribiendo: *.on nsfw*`)
 	let url = cosplay[Math.floor(Math.random() * cosplay.length)]
 	let tekk = `\`\`\`➩ Listo! \`\`\` `
 conn.sendFile(m.chat, url, null, tekk.trim(), m)	
