@@ -5,7 +5,7 @@ let handler = async (m, { conn, usedPrefix, text, command }) => {
     let sticker = global.db.data.sticker
     if (sticker[hash] && sticker[hash].locked) throw m.reply('Este *Sticker* ya está configurado')
     delete sticker[hash]
-    m.reply(`✧ Listo!`)
+    m.reply(`𖣐 Listo!`)
 }
 
 
