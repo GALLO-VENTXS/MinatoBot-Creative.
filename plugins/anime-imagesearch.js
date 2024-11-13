@@ -33,7 +33,7 @@ let handler = async (m, { conn, usedPrefix, command }) => {
         }
     } catch (error) {
         console.error(error);
-        if (error.includes(`✧ Responde a una *Imagen* con el comando ${usedPrefix + command}`)) {
+        if (error.includes(`𖣐 Responde a una *Imagen* con el comando ${usedPrefix + command}`)) {
             m.reply(error);
         } else {
             m.reply('Internal server error');
