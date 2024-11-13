@@ -8,11 +8,11 @@
 import fetch from 'node-fetch'
 
 let handler = async (m, { conn, text, usedPrefix, command }) => {
-if (!text) throw m.reply(`Ingresa una consulta\n*✧ Ejemplo:* ${usedPrefix}${command} Joji Ew`);
+if (!text) throw m.reply(`Ingresa una consulta\n*⚡ Ejemplo:* ${usedPrefix}${command} Joji Ew`);
 conn.sendMessage(m.chat, { react: { text: "🕒", key: m.key } });
 	let ouh = await fetch(`https://api.nyxs.pw/dl/spotify-direct?title=${text}`)
   let gyh = await ouh.json()
-  m.reply(`_✧ Enviando ${gyh.result.title} - ${gyh.result.artists} (${gyh.result.album})_\n\n> ${gyh.result.urlSpotify}`)
+  m.reply(`_𖣐 Enviando ${gyh.result.title} - ${gyh.result.artists} (${gyh.result.album})_\n\n> ${gyh.result.urlSpotify}`)
       const doc = {
       audio: { url: gyh.result.url },
       mimetype: 'audio/mp4',
