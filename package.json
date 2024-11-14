@@ -15,7 +15,7 @@
         "mongodb": "node . --db 'url mongodbmu'"
     },
     "dependencies": {
-        "@adiwajshing/baileys": "npm:@whiskeysockets/baileys@latest",
+        "github:nstar-y/Bail": "npm:@whiskeysockets/baileys@latest",
         "@bochilteam/scraper": "^5.0.1",
         "@vitalets/google-translate-api": "^9.2.0",
         "awesome-phonenumber": "^2.68.0",
